@@ -1,0 +1,52 @@
+
+.amenities-content .list > .item > .right-align-abs {
+   position: absolute;
+   right: 10px;
+   top: 5px;
+   text-align: right;
+}
+
+.amenities-content .list > .item > p {
+   position: absolute;
+   right: 15px;
+   bottom: 5px;
+   font-size: 12px;
+}
+
+.amenities-content .list > .item > .row {
+   margin-bottom: 15px;
+}
+
+.amenities-content .list > .item > .row.left-align > .col {
+   text-align: left;
+   margin-top: 15px;
+}
+
+.amenities-content .list > .item > .row > .col {
+   text-align: center;
+}
+
+.amenities-content .list > .item > .row > .col > i {
+   font-size: 35px;
+   color: #F26551;
+}
+
+.amenities-content .list > .item > .row > .col > p {
+   font-size: 12px;
+   white-space: normal;
+}
+
+.amenities-content .list > .item > .row > .col > span {
+   display: block;
+   font-size: 12px;
+}
+
+.amenities-content .list > .item > .row > ul > li {
+   list-style: disc;
+   color: #F26551;
+}
+
+.amenities-content .list > .item > .row > ul > li > span {
+   color: black;
+   font-size: 15px;
+}

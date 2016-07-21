@@ -1,0 +1,334 @@
+/* Pricing */
+.pricing-content .list > .item.pricing > .row {
+  margin-bottom: 15px;
+  margin-left: -10px;
+}
+.pricing-content .list > .item.pricing > .row > button.icon {
+  position: relative;
+  top: 5px;
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  border-color: transparent;
+  color: #F26551;
+  font-size: 25px;
+  font-weight: bold;
+  /*border-radius: 50%; */
+  z-index: 100;
+}
+.pricing-content .list > .item.pricing > .row > button.icon:first-child {
+  left: -10px;
+}
+.pricing-content .list > .item.pricing > .row > button.icon:last-child {
+  right: 60px;
+}
+
+.pricing-content .list > .item.pricing > .row > .col {
+  position: relative;
+  left: -30px;
+}
+
+.pricing-content .list > .item.pricing > .row > .col > span {
+  white-space: normal;
+}
+
+.pricing-content .list > .item.pricing > .row > button.ion-ios-arrow-back {
+  left: 5px;
+}
+
+.pricing-content .list > .item.pricing > .row > button.ion-ios-arrow-forward {
+  right: 50px;
+}
+
+.pricing-content .list > .item.pricing > .row > button.icon.empty {
+  color: lightgrey;
+}
+
+
+/* Tag */
+.pricing-content .list > .item-divider > .row.tag > .col {
+   text-align: center;
+}
+
+.pricing-content .list > .item-divider > .row.tag > .col > div {
+   background-color: white;
+   border-radius: 5px;
+}
+
+.pricing-content .list > .item-divider > .row.tag > .col > div > p {
+   background-color: black;
+   color: white;
+   border-radius: 5px;
+   padding: 5px 0;
+   font-size: 15px;
+}
+
+.pricing-content .list > .item-divider > .row.tag > .col > div > span {
+   font-size: 15px;
+}
+
+
+
+.pricing-content .list > .item > .row > ul > li {
+   list-style: disc;
+   color: #F26551;
+   text-align: left;
+}
+
+.pricing-content .list > .item > .row > ul > li > span {
+   color: black;
+   font-size: 15px;
+}
+
+.pricing-content .list > .item > .row > ul > li > p {
+   text-align: right;
+}
+
+.pricing-content .list > .item > .row > ul > li > ul > li {
+   list-style: inside;
+   color: #F26551;
+}
+
+.pricing-content .list > .item > .row > ul > li > ul > li > span {
+   color: black;
+   font-size: 15px;
+}
+
+.pricing-content .list > .item > .row > ul > li > ul > li > p {
+   text-align: right;
+}
+
+.pricing-content .list > .item > .row > ul.no-list > li > ul > li {
+   list-style: none;
+}
+
+.pricing-content .list > .item.pricing-vendor > img {
+   display: inline-block;
+   height: 60px;
+   max-width: 120px;
+   border: 1px solid rgba(0,0,0,0.3);
+   box-shadow: 1px 1px 5px 3px rgba(66,66,66,0.3);
+   border-radius: 5px;
+}
+
+.pricing-content .list > .item.pricing-vendor > div {
+   position: absolute;
+   right: 5px;
+   top: 40%;
+}
+
+.pricing-content .list > .item.pricing-vendor > div > span {
+   color: #1D607D;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+.pricing-content .list > .item.pricing-vendor > div > p {
+   display: inline;
+   color: #2FA859;
+   font-size: 15px;
+}
+
+
+/* Rating */
+
+/*Fix For Rating Circle In Small Screens Like IPhone*/
+@media(max-width: 400px) {
+   .pricing-content .list > .item.rating-item {
+      padding-left: 0;
+      padding-right: 0;   
+   }
+}
+
+.pricing-content .list > .item.rating-item i {
+   letter-spacing: -5px;
+}
+
+.pricing-content .list > .item.rating-item > .row {
+   margin-bottom: 1px;
+}
+
+.pricing-content .list > .item.rating-item i.ion-record {
+   color: #F26551;
+}
+
+.pricing-content .list > .item.rating-item i.ion-ios-circle-outline {
+   color: #18AFD1;
+}
+
+.pricing-content .list > .item.rating-item > .row > .col > i {
+   font-size: 150%;
+}
+
+.pricing-content .list > .item.rating-item > .rating-reviews {  
+   position: absolute;
+   right: 5px;
+   bottom: 5px;
+}
+
+.pricing-content .list > .item.rating-item.small > .row {
+   margin-left: 1px;
+}
+
+.pricing-content .list > .item.rating-item.small > .row > .col > span {
+   font-size: 12px;
+   text-align: left;
+}
+
+.pricing-content .list > .item.rating-item.small > .row > span {
+   padding: 6px;
+   position: absolute;
+   right: 1px;
+}
+
+.pricing-content .list > .item.rating-item.small > .row > .col > i {
+   font-size: 10px;
+   letter-spacing: 1px;
+}
+
+/* Progress Bar */
+
+.pricing-content .list > .item.close-by > .row > .col > .span {
+   font-size: 15px;
+}
+
+@media(max-width: 400px) {
+   .pricing-content .list > .item.progress-bar {
+      padding-left: 0;
+   }
+}
+
+.pricing-content .list > .item.progress-bar > .row > div:not(.progress) {
+   padding-top: 12px;
+}
+
+/* Close By AND Recommended For */
+
+.pricing-content .list > .item.progress-bar > .row {
+   margin: 0;
+   padding: 0;
+}
+
+.pricing-content .list > .item.progress-bar > .row > .col > span{
+   text-align: left;
+}
+
+/*.pricing-content .list > .item.progress-bar > .row > .col:last-child > span{
+   padding-right: 15px; 
+   text-align: right;
+}*/
+
+/* Custom Fixes */
+
+.fix-flex-and-padding {
+   flex: 0;
+   padding: 1px;
+   display: inline;
+}
+
+
+/* Rings */
+
+.pricing-content .list > .indexes-item > .row {
+   margin-bottom: 50px;
+}
+
+/* Fixes The Indexes Rings For IPhone 5*/
+@media(max-width: 320px) {
+   .pricing-content .list > .indexes-item > .row {
+      margin-left: -26px;
+   }  
+}
+
+/* New Ring */
+
+.pricing-content .list > .indexes-item > .col > .row > .col{
+   display: inline;
+}
+
+.pricing-content .list > .indexes-item > .col > .row > .col > p{
+   position: relative;
+}
+
+.pricing-content .list > .indexes-item > .col > .row > .circle-block > span {
+   position: relative;
+   top: -63px;
+   left: 33px;
+}
+
+.pricing-content .list > .indexes-item > .col > .row > .caption-block > .row:first-child > p {
+   position: absolute;
+   top: 22%;
+   left: 45%;
+}
+
+.pricing-content .list > .indexes-item > .col > .row > .caption-block > .row:last-child > p {
+   position: absolute;
+   top: 60%;
+   left: 45%;
+}
+
+
+
+/* End New Ring */
+
+.pricing-content .list > .indexes-item {
+   text-align: left;
+}
+
+.pricing-content .list > .indexes-item .ring {
+   height: 100px;
+   width: 100px;
+   border: 5px solid;
+   border-radius: 50%;
+   text-align: center;
+}
+
+.pricing-content .list > .indexes-item .ring > span {
+   position: relative;
+   top: 35px;
+}
+
+.pricing-content .list > .indexes-item p {
+   position: relative;
+   top: 15px;
+   left: 100px;
+   min-width: 150px;
+   white-space: normal;
+}
+
+.pricing-content .list > .indexes-item .row {
+   margin-bottom: 15px;
+}
+
+.pricing-content .list > .pricing-review > .row > .col > * {
+  text-align: left;
+}
+
+.pricing-content .list > .pricing-review > .row > .col > img.image-override {
+  position: relative;
+  max-height: 80px;
+  max-width: 80px;
+  left: 15px;
+}
+
+.pricing-content .list > .pricing-review > .row > .col > i {
+   position: absolute;
+   right: 5px;
+   top: 5px;
+   font-size: 12px;
+}
+
+.pricing-content .list > .pricing-review > .row > .col > p {
+   white-space: normal;
+}
+
+.pricing-content .list > .item > .row > .col > i {
+   font-size: 30px;
+   color: #F26551;
+}
+
+.pricing-content .list > .item > .row > .col > span {
+   display: block;
+   font-size: 12px;
+}

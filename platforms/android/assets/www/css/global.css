@@ -1,0 +1,84 @@
+ion-content {
+   background-color: #f5f5f5;
+}
+
+ion-content .list {
+   background-color: #ffffff;
+}
+
+ion-content .list > .header > p {
+   font-size: 16px;
+   padding-top: 10px;
+   padding-left: 15px;
+   font-weight: 100 !important;
+}
+
+ion-content .list > .item.with-header {
+   border-top:1px solid #B0E3EF;
+}
+
+ion-content .list > .item > .row {
+  margin-bottom: 15px;
+}
+
+ion-content .list > .item {
+   box-shadow: 0px 3px 5px 0px rgba(66,66,66,0.3);
+}
+
+ion-content .list > .item > .row > .col {
+  text-align: center;
+}
+
+
+/* Ring Colors */
+.ring.ring-red {
+   color: #DA2626;
+   border-color: #DA2626;
+}
+.ring.ring-orange {
+   color: #F36621;
+   border-color: #F36621;
+}
+.ring.ring-yellow {
+   color: #F29F1E;
+   border-color: #F29F1E;
+}
+.ring.ring-lightblue {
+   color: #1D607D;
+   border-color: #1D607D;
+}
+.ring.ring-green {
+   color: #1A9F48;
+   border-color: #1A9F48;
+}
+.ring.ring-darkblue {
+   color: #062948;
+   border-color: #062948;
+}
+
+
+/* Overrides */
+
+
+/* Tab Color Override */
+ion-tabs.tab-color-override a.tab-item.tab-item-active {
+   color: #18AFD1 !important;
+}
+
+/* Progress Style Override */
+progress[value] {
+   height: 5px;
+   -webkit-appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+   background-color: lightgrey;
+}
+progress[value]::-webkit-progress-value {
+  background-color: #F26551;
+}
+
+/* Item Divider Color And Border Overrides */
+
+.item-divider {
+  min-height: 20px !important;
+}

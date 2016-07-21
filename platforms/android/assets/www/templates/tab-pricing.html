@@ -1,0 +1,374 @@
+<ion-view view-title="Pricing">
+  <ion-content class="pricing-content">
+    <div class="list">
+      <div class="item-divider"></div>
+      <div class="header">
+        <p>Pricing</p>
+      </div>
+      <div class="item with-header pricing">
+        Property Type
+        <div class="row">
+          <button class="icon ion-ios-arrow-back {{back}}" ng-click="slide('left')"></button>
+          <div class="col col-25" ng-repeat = "type in propertyType" ng-if="$index >= indexLeft && $index <= indexRight">
+            <i class="icon {{type.icon}}"></i>
+            <span>{{type.type}}</span>
+          </div>
+          <button class="icon ion-ios-arrow-forward {{forward}}" ng-click="slide('right')"></button>
+        </div>
+        BHK Options
+        <div class="row">
+          <button class="icon ion-ios-arrow-back {{back}}" ng-click="slide('left')"></button>
+          <div class="col col-25" ng-repeat = "type in propertyType" ng-if="$index >= indexLeft && $index <= indexRight">
+            <i class="icon {{type.icon}}"></i>
+            <span>{{type.type}}</span>
+          </div>
+          <button class="icon ion-ios-arrow-forward {{forward}}" ng-click="slide('right')"></button>
+        </div>
+      </div>
+      <div class="item-divider">
+        <div class="row tag">
+          <div class="col">
+            <div>
+              <p>Minimum</p>
+              <span>Rs. 40,000</span>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p>Average</p>
+              <span>Rs. 40,000</span>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p>Maximum</p>
+              <span>Rs. 40,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header">
+        <p>Configuration</p>
+      </div>
+      <div class="item with-header">
+        <div class="row">
+          <ul class="col">
+              <li><span>Super Area</span></li>
+              <li><span>Carpet Area</span></li>
+              <li><span>Total Balconies</span></li>
+              <li><span>Total Halls</span></li>
+              <li><span>Total Bedrooms</span></li>
+              <li><span>Total Washrooms</span></li>
+              <li><span>Total No. of Parking Spaces</span></li>
+          </ul>
+          <ul class="col">
+              <li><p>200 sqft</p></li>
+              <li><p>200 sqft</p></li>
+              <li><p>08</p></li>
+              <li><p>03</p></li>
+              <li><p>12</p></li>
+              <li><p>06</p></li>
+              <li><p>00</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="item-divider"></div>
+      <div class="header">
+        <p>Charges</p>
+      </div>
+      <div class="item with-header">
+        <div class="row left-align">
+          <ul class="col">
+              <li><span>Power Backup</span></li>
+              <li><span>Maintenance</span></li>
+              <li><span>Move In</span></li>
+              <li><span>Move Out</span></li>
+              <li>
+                <span>Cooking Charges</span>
+                <ul>
+                  <li><span>One Meal</span></li>
+                  <li><span>Two Meal</span></li>
+                </ul>
+              </li>
+              <li>
+                <span>Maid Charges</span>
+                <ul>
+                  <li><span>12 Hours</span></li>
+                  <li><span>24 Hours</span></li>
+                </ul>
+              </li>
+          </ul>
+          <ul class="col no-list">
+              <li><p>Rs.2000</p></li>
+              <li><p>Rs.2000</p></li>
+              <li><p>Rs.2000</p></li>
+              <li><p>Rs.2000</p></li>
+              <li>
+                <p>&nbsp</p>
+                <ul>
+                  <li><p>Rs.2000</p></li>
+                  <li><p>Rs.2000</p></li>
+                </ul>
+              </li>
+              <li>
+                <p>&nbsp</p>
+                <ul>
+                  <li><p>Rs.2000</p></li>
+                  <li><p>Rs.2000</p></li>
+                </ul>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item-divider"></div>
+      <a class="item pricing-vendor" href="">
+        <img src="img/99acres.png" alt="">
+        <div>
+          <span>Rs 55,000</span>
+          <p>(10 options)</p>
+        </div>
+      </a>
+      <div class="item-divider"></div>
+      <a class="item pricing-vendor" href="">
+        <img src="img/commonfloor1.jpg" alt="">
+        <div>
+          <span>Rs 50,000</span>
+          <p>(08 options)</p>
+        </div>
+      </a>
+      <div class="item-divider"></div>
+      <a class="item pricing-vendor" href="">
+        <img src="img/magicbricks.JPG" alt="">
+        <div>
+          <span>Rs 55,000</span>
+          <p>(10 options)</p>
+        </div>
+      </a>
+      <div class="item-divider"></div>
+      <a class="item pricing-vendor" href="">
+        <img src="img/housing_logo.png" alt="">
+        <div>
+          <span>Rs 55,000</span>
+          <p>(10 options)</p>
+        </div>
+      </a>
+      <div class="item-divider"></div>
+      <div class="header">
+        <p>Rating</p>
+      </div>
+      <div class="item with-header rating-item">
+        <div class="row">
+          <div class="col" ng-repeat="item in items">
+            <i class="icon {{item.class}}"></i>
+          </div>
+        </div>
+        <div class="rating-reviews">
+          <p>(280 reviews)</p>
+        </div>
+      </div>
+      <div class="item-divider"></div>
+      <div class="header">
+        <p>Parameters</p>
+      </div>
+      <div class="item with-header rating-item small parameters">
+        <div class="row">
+          <div class="col col-25">
+            <span>Security</span>
+          </div>
+          <div class="col col-25"></div>
+          <span>
+            <div class="fix-flex-and-padding" ng-repeat="item in items">
+              <i class="icon {{item.class}}"></i>
+            </div>
+          </span>
+        </div>
+        <div class="row">
+          <div class="col col-25">
+            <span>Open & Green Areas</span>
+          </div>
+          <div class="col col-25"></div>
+          <span>
+            <div class="fix-flex-and-padding" ng-repeat="item in items">
+              <i class="icon {{item.class}}"></i>
+            </div>
+          </span>
+        </div>
+        <div class="row">
+          <div class="col col-25">
+            <span>Maintainence</span>
+          </div>
+          <div class="col col-25"></div>
+          <span>
+            <div class="fix-flex-and-padding" ng-repeat="item in items">
+              <i class="icon {{item.class}}"></i>
+            </div>
+          </span>
+        </div>
+        <div class="row">
+          <div class="col col-25">
+            <span>Shops & Services</span>
+          </div>
+          <div class="col col-25"></div>
+          <span>
+            <div class="fix-flex-and-padding" ng-repeat="item in items">
+              <i class="icon {{item.class}}"></i>
+            </div>
+          </span>
+        </div>
+        <div class="row">
+          <div class="col col-25">
+            <span>Club House & Sports Facilities</span>
+          </div>
+          <div class="col col-25"></div>
+          <span>
+            <div class="fix-flex-and-padding" ng-repeat="item in items">
+              <i class="icon {{item.class}}"></i>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="item-divider"></div>
+      <div class="header">
+        <p>Close By</p>
+      </div>
+      <div class="item with-header progress-bar">
+        <div class="row">
+          <div class="col col-30">
+            <span>Good Schools</span>
+            <span>Good Markets</span>
+            <span>Good Hospitals</span>
+          </div>
+          <div class="col col-50 progress">
+            <progress max="100" value="84"></progress>
+            <progress max="100" value="60"></progress>
+            <progress max="100" value="51"></progress>
+          </div>
+          <div class="col col-20">
+            <span>84%</span>
+            <span>60%</span>
+            <span>51%</span>
+          </div>
+        </div>
+      </div>
+      <div class="item-divider"></div>
+      <div class="header">
+        <p>Recommended For</p>
+      </div>
+      <div class="item with-header progress-bar">
+        <div class="row"> 
+          <div class="col col-30">
+            <span>Kids</span>
+            <span>Elders</span>
+            <span>Pets</span>
+            <span>Singles</span>
+          </div>
+          <div class="col col-50 progress">
+            <progress max="100" value="84"></progress>
+            <progress max="100" value="60"></progress>
+            <progress max="100" value="51"></progress>
+            <progress max="100" value="53"></progress>
+          </div>
+          <div class="col col-20">
+            <span>84%</span>
+            <span>60%</span>
+            <span>51%</span>
+            <span>53%</span>
+          </div>
+        </div>
+      </div>
+      <div class="item-divider"></div>
+      <div class="item indexes-item">
+        <div class="col col-100">
+            <div class="row">
+              <!--<div class="ring ring-lightblue">
+                    <span>75%</span>
+                    <p>Conviniently Located</p>
+              </div>-->
+              <div class="col col-33 circle-block">
+                <!--<percent-circle 
+                  percent="75"
+                  colors="{center: 'white', highlight: '#1D607D', remaining: 'lightGrey'}">
+                </percent-circle>-->
+                <div
+                  round-progress
+                  max="100"
+                  current="75"
+                  color="#1D607D"
+                  bgcolor="#eaeaea"
+                  radius="50"
+                  stroke="5"
+                  semi="false"
+                  rounded="true"
+                  clockwise="true"
+                  responsive="false"
+                  animation="easeInOutQuart"></div>
+                  <span>75%</span>
+                <!--<percent-circle 
+                  percent="50"
+                  colors="{center: 'white', highlight: '#1A9F48', remaining: 'lightGrey'}">
+                </percent-circle>-->
+                <div
+                  round-progress
+                  max="100"
+                  current="50"
+                  color="#1A9F48"
+                  bgcolor="#eaeaea"
+                  radius="50"
+                  stroke="5"
+                  semi="false"
+                  rounded="true"
+                  clockwise="true"
+                  responsive="false"
+                  animation="easeInOutQuart"></div>
+                  <span>50%</span>
+              </div>
+              <div class="col caption-block">
+                <div class="row">
+                  <p>Conveniently Located</p>
+                </div>
+                <div class="row">
+                  <p>Easy Access To Public Transport</p>  
+                </div>
+              </div>
+            </div>
+            <!--<div class="row">
+              <div class="ring ring-green">
+                  <span>50%</span>
+                  <p>Easy Access To Public Transport</p>
+              </div>
+              <div class="col col-33">
+                
+                
+              </div>
+            </div>-->
+        </div>
+      </div>
+      <div class="item-divider"></div>
+      <div class="item rating-item small pricing-review">
+        <div class="row">
+          <div class="col col-10">
+            <img class="image-override" src="img/adam.jpg" alt="">
+          </div>
+          <div class="col col-offset-25">
+            <h2>Title</h2>
+            <i>16 July, 2016</i>
+            <span>
+              <div class="fix-flex-and-padding" ng-repeat="item in items">
+                <i class="icon {{item.class}}"></i>
+              </div>
+            </span>
+            <p>
+              Lorem ipsum dolor sit amet, 
+              consectetur adipisicing elit. 
+              Nemo nostrum fugit architecto eum facere, 
+              laborum dolores error id quia animi, 
+              sed sit tenetur odio dolore minima exercitationem omnis. 
+              Eius, voluptatem.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item-divider"></div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,30 @@
+
+.nearme-content .list > .item > p {
+   position: absolute;
+   right: 15px;
+   bottom: 5px;
+   font-size: 12px;
+}
+
+.nearme-content .list > .item > .row {
+   margin-bottom: 15px;
+}
+
+.nearme-content .list > .item > .row > .col {
+   text-align: center;
+}
+
+.nearme-content .list > .item > .row > .col > i {
+   font-size: 35px;
+   color: #F26551;
+}
+
+.nearme-content .list > .item > .row > .col > p {
+   font-size: 12px;
+   white-space: normal;
+}
+
+.nearme-content .list > .item > .row > .col > span {
+   display: block;
+   font-size: 12px;
+}
